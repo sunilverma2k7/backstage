@@ -1,0 +1,36 @@
+  type: 'object',
+  description: 'Knowing how much of your code (and which languages), are covered by static analysis (and where) helps you to identify gaps where code has no free feedback on its quality and other characteristics.',
+  accordianTitle: '',
+  properties: {
+    'q1': {
+      title:'Do you have any code coverage?',
+      type: 'string',
+      enum: ['Yes', 'No', 'Not sure'],
+    },
+  },
+  dependencies: {
+    'q1': {
+      oneOf: [
+        {
+          properties: {
+            'q1': {
+              enum: ['No', 'Not sure'],
+            },
+          },
+        },
+        {
+          properties: {
+            'q1': {
+              enum: ['Yes'],
+            },
+            'q2': {
+              title:'Coverage Estimation Technique?',
+              type: 'string',   
+            },
+          },
+          required: ['q2'],
+        },        
+      ],
+    },
+  },
+  // required: ['q1'],
