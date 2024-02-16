@@ -10,6 +10,7 @@ form:
         - No
         - Not sure
       score: 10
+  dependencies:
     - name: ease-q2
       label: Coverage Estimation Technique?
       type: string
