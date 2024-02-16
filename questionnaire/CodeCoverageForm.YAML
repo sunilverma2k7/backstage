@@ -1,9 +1,9 @@
 form:
-  title: Static AnalysisA
-  description: Knowing how much of your code (and which languages), are covered by static analysis (and where) helps you to identify gaps where code has no free feedback on its quality and other characteristics.
+  title: Code Coverage
+  description: Knowing and controlling the scope of your static analysis practices helps you to ensure you get maximum value from them and prevent accidental gaps.
   fields:
     - name: ease-q1
-      label: Do you have any code coverage?
+      label: Is your project perform static code analysis?
       type: string
       enum:
         - Yes
@@ -11,7 +11,7 @@ form:
         - Not sure
       score: 10
     - name: ease-q2
-      label: Coverage Estimation Technique?
-      type: string
+      label: What percentage of your codebase is covered by static analysis?
+      type: number
       dependencies:
         country: Yes
