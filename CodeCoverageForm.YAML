@@ -1,5 +1,5 @@
 form:
-  title: Static Analysis - D
+  title: Static AnalysisA
   description: Knowing how much of your code (and which languages), are covered by static analysis (and where) helps you to identify gaps where code has no free feedback on its quality and other characteristics.
   fields:
     - name: ease-q1
