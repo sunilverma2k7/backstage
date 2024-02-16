@@ -1,0 +1,27 @@
+form:
+  title: Example Form
+  fields:
+    - name: country
+      label: Country
+      type: string
+      enum:
+        - USA
+        - Canada
+        - UK
+    - name: state
+      label: State
+      type: string
+      enum:
+        - California
+        - New York
+        - Ontario
+      dependencies:
+        country: USA
+    - name: province
+      label: Province
+      type: string
+      enum:
+        - Ontario
+        - British Columbia
+      dependencies:
+        country: Canada
