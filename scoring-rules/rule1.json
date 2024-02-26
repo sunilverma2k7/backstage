@@ -1,0 +1,27 @@
+conditions: {
+  any: [{
+    all: [{
+      fact: 'ease-q1-1',
+      operator: 'equal',
+      value: 'no'
+    }],
+    name: 'code-criteria-1'
+  }, {
+     all: [{
+      fact: 'ease-q1-1',
+      operator: 'equal',
+      value: 'yes'
+    }, {
+      fact: 'ease-q1-2',
+      operator: 'is not',
+      value: null
+      }],
+      name: 'code-criteria-1'
+    }]
+  },
+  event: { // define the event to fire when the conditions evaluate truthy
+  type: 'calculate-score',
+  params: {
+    message: '<message>'
+  }
+}
