@@ -1,8 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Org1xx
-  description: org 1 description
+  name: Org1
+  description: An example of a Backstage application.
 spec:
-  type: website
-  owner: product 1
+  type: product
+  owner: john@example.com
+  lifecycle: experimental
