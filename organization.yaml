@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Organization
+metadata:
+  name: Org1
+  description: org 1 description
+spec:
+  type: product
+  owner: product 1
