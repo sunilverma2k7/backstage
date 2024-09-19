@@ -1,8 +1,13 @@
 apiVersion: backstage.io/v1alpha1
-kind: Organization
+kind: Component
 metadata:
-  name: Org1
-  description: org 1 description
+  name: baseline
+  description: An example of a Backstage application.
+  # Example for optional annotations
+  # annotations:
+  #   github.com/project-slug: backstage/backstage
+  #   backstage.io/techdocs-ref: dir:.
 spec:
-  type: product
-  owner: product 1
+  type: website
+  owner: john@example.com
+  lifecycle: experimental
