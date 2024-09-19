@@ -11,3 +11,4 @@ spec:
   type: product
   owner: product1@example.com
   name: product 1
+  lifecycle: experimental
