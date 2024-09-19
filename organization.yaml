@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: Org1
+  name: Org1xx
   description: org 1 description
 spec:
   type: product
