@@ -9,25 +9,7 @@ spec:
     displayName: Sunil Verma1
     email: sunil1.verma@roche.com # Roche email
   memberOf: [sw_engineering_horizontals]
+  type: User
+  owner: john@example.com
+  lifecycle: experimental
 ---
-## --------------------------------------------------------------------------------
-# ADD YOUR USER BELOW
-## --------------------------------------------------------------------------------
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: fakeUser1 # Roche userId
-spec:
-  profile:
-    displayName: Fake User1
-    email: fake1.user@fake.com # Roche email
-  memberOf: []
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: sw_engineering_horizontals # DO NOT CHANGE THIS NAME, AS IT IS REFERENCED FROM CIDM GROUP
-spec:
-  type: team
-  children: []
