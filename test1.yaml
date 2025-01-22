@@ -3,11 +3,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: vermas7 # Roche userId
+  name: vermas71 # Roche userId
 spec:
   profile:
-    displayName: Sunil Verma
-    email: sunil.verma@roche.com # Roche email
+    displayName: Sunil Verma1
+    email: sunil1.verma@roche.com # Roche email
   memberOf: [sw_engineering_horizontals]
 ---
 ## --------------------------------------------------------------------------------
@@ -16,11 +16,11 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: fakeUser # Roche userId
+  name: fakeUser1 # Roche userId
 spec:
   profile:
-    displayName: Fake User
-    email: fake.user@fake.com # Roche email
+    displayName: Fake User1
+    email: fake1.user@fake.com # Roche email
   memberOf: []
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
