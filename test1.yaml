@@ -1,13 +1,33 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: User
 metadata:
-  name: test1
-  description: An example of a Backstage application.
-  # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  name: vermas7 # Roche userId
 spec:
-  type: website
-  owner: johaaaaa@example.com
-  lifecycle: experimental
+  profile:
+    displayName: Sunil Verma
+    email: sunil.verma@roche.com # Roche email
+  memberOf: [sw_engineering_horizontals]
+---
+## --------------------------------------------------------------------------------
+# ADD YOUR USER BELOW
+## --------------------------------------------------------------------------------
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fakeUser # Roche userId
+spec:
+  profile:
+    displayName: Fake User
+    email: fake.user@fake.com # Roche email
+  memberOf: []
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: sw_engineering_horizontals # DO NOT CHANGE THIS NAME, AS IT IS REFERENCED FROM CIDM GROUP
+spec:
+  type: team
+  children: []
